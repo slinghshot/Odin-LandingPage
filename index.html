@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Odin Landing Page | S. Singh</title>
+        <style>
+            body{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            img{
+                width:550px;
+                height: 270px;
+            }
+            #NavBar {
+                display:flex;
+                background-color: #1F2937;
+                font-size:18px;
+                color:#E5E7EB;
+                justify-content: space-around;
+                border: 0px solid red;
+                margin:-8px;
+            }
+            .NavBarRight p{
+                display:inline-flex;
+                border: 2px solid red;
+                /*justify-content: space-around;*/
+                margin:10px;
+            }
+            #MainBanner{
+                border: 0px solid red;
+                margin:-20px;
+                background-color:#1F2937;
+                padding:100px;
+            }
+            .headAndSecText{
+                color: #E5E7EB;
+                font-size:18px;
+            }
+            #MainBannerLeft{
+                border: 5px solid red;
+                color:#F9FAF8;
+                font-size: 48px;
+                font-weight: extra-bold;
+                align-items: center;
+                align-self: center;
+                width:550px;
+                flex-grow:1;
+                /*padding-right: 50px;*/
+            }
+            #MainBannerRight{
+                border: 5px solid red;
+                align-items: center;
+                align-self: center;
+                padding-left:50px;
+                flex-grow:1;
+            }
+            #MainBanner{
+                border: 5px solid red;
+                display:flex;
+                align-content: center;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                                
+            }
+            #signUpButton{
+                background-color: #3882f6;
+                border-radius: 15px;
+                color: #F9FAF8;
+                text-decoration: none;
+                font-weight: bold;
+                padding:10px 35px 10px 35px;
+                font-size:18px;
+            }
+            #MainBody{
+                border: 5px solid red;
+                text-align:center;
+                padding:20px;
+                font-size:36px;
+                font-weight: 800;
+                color:#1F2937;
+            }
+            .spacer{
+                border: 3px solid red;
+                flex: 222 0 auto;
+            }
+            .spacer1{
+                border: 3px solid red;
+                flex: 20 0 auto;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="NavBar">
+            <h3>Header Logo</h3>
+            <span class="NavBarRight" class="headAndSecText">
+                <p>Home</p>
+                <p>About</p>
+                <p>Contact</p>
+            </span>
+        </div>
+        <div id="MainBanner">
+            <div class="spacer">
+
+            </div>
+            
+            <div id="MainBannerLeft">
+                <p id="MainText">This website is awesome</p>
+                <p class="headAndSecText">This website has some subtext that goes here under the main title.
+                    It's a smaller font and the color is lower contrast</p>
+                <a id="signUpButton" href="">Sign up</a>
+            </div>
+            <div class="spacer1">
+
+            </div>
+            <div id="MainBannerRight">
+                <img src="https://images.pexels.com/photos/10319220/pexels-photo-10319220.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260">
+            </div>
+            <div class="spacer">
+
+            </div>
+        </div>
+        <div id="MainBody">
+            <p>Some random information.</p>
+        </div>
+    </body>
+</html>
