@@ -19,12 +19,14 @@
                 justify-content: space-around;
                 border: 0px solid red;
                 margin:-8px;
+                align-items: baseline;
             }
-            .NavBarRight p{
+            .NavBarRight{
                 display:inline-flex;
-                border: 2px solid red;
-                /*justify-content: space-around;*/
-                margin:10px;
+                /*border: 2px solid red;
+                justify-content: space-around;
+                margin:10px;*/
+                gap: 15px;
             }
             #MainBanner{
                 border: 0px solid red;
@@ -37,7 +39,7 @@
                 font-size:18px;
             }
             #MainBannerLeft{
-                border: 5px solid red;
+                border: 0px solid red;
                 color:#F9FAF8;
                 font-size: 48px;
                 font-weight: extra-bold;
@@ -48,14 +50,14 @@
                 /*padding-right: 50px;*/
             }
             #MainBannerRight{
-                border: 5px solid red;
+                border: 0px solid red;
                 align-items: center;
                 align-self: center;
                 padding-left:50px;
                 flex-grow:1;
             }
             #MainBanner{
-                border: 5px solid red;
+                border: 0px solid red;
                 display:flex;
                 align-content: center;
                 flex-wrap: wrap;
@@ -72,22 +74,68 @@
                 font-size:18px;
             }
             #MainBody{
-                border: 5px solid red;
+                border: 3px solid red;
                 text-align:center;
                 padding:20px;
                 font-size:36px;
                 font-weight: 800;
                 color:#1F2937;
+                margin-bottom: 100px;
             }
             .spacer{
-                border: 3px solid red;
+                border: 0px solid red;
                 flex: 222 0 auto;
             }
             .spacer1{
-                border: 3px solid red;
+                border: 0px solid red;
                 flex: 20 0 auto;
             }
-            
+            #optionsMenu{
+                border: 3px solid red;
+                display:flex;
+                gap:90px;
+                justify-content: center;
+                text-align: center;
+            }
+            .rects{
+                border:4px solid #3882f6;
+                height:150px;
+                width:150px;
+                border-radius: 20px;
+                margin-bottom: -10px;
+            }
+            .containsIll{
+                border:3px solid red;
+                width:160px;
+                font-size:small;
+                color:grey;
+            }
+            #QuoteSection{
+                border:3px solid red;
+                background-color: #E5E7EB;
+                padding:20px;
+                display:flex;
+                flex-direction: column;
+            }
+            #quote{
+                border:3px solid red;
+                font-style: italic;
+                color: #1F2937;
+                font-size: 36px;
+                width:50%;
+                margin-left:auto;
+                margin-right:auto;
+                font-weight: 1;
+            }
+            #quoteAuthor{
+                border:3px solid red;
+                font-weight: bold;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                
+            }
         </style>
     </head>
     <body>
@@ -122,6 +170,33 @@
         </div>
         <div id="MainBody">
             <p>Some random information.</p>
+        
+        <div id="optionsMenu">
+            <div class="containsIll">
+                <div class="rects"></div>
+                <p>this is some subtext<br>under an illustration<br>or image</p>
+            </div>
+            <div class="containsIll">
+                <div class="rects"></div>
+                <p>this is some subtext<br>under an illustration<br>or image</p>
+            </div>
+            <div class="containsIll">
+                <div class="rects"></div>
+                <p>this is some subtext<br>under an illustration<br>or image</p>
+            </div>
+            <div class="containsIll">
+                <div class="rects"></div>
+                <p>this is some subtext<br>under an illustration<br>or image</p>
+            </div>
+        </div>
+        </div>
+   
+        <div id="QuoteSection">
+            
+            <p id="quote">This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space,
+                 or maybe people will actually read it. Who knows? All I know is that it looks nice.</p>
+            <p id="quoteAuthor">-Thor, God of Thunder</p>
+            
         </div>
     </body>
 </html>
